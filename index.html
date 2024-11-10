@@ -24,16 +24,16 @@
             <section class="container">
                 <div class="flex justify-between items-center">
                     <!-- Logo -->
-                    <a href="/" class="w-full lg:w-1/4">
+                    <a href="/" class="w-max lg:w-1/4">
                         <img
                             src="./assets/images/granite-graveyard-logo-neon.svg"
                             alt="Granite Graveyard logo"
-                            class="w-[200px]"
+                            class="w-[160px] sm:w-[200px]"
                         />
                     </a>
 
                     <!-- Menu items -->
-                    <div class="w-full lg:w-2/4 flex justify-center">
+                    <div class="hidden lg:flex w-1/2 justify-center">
                         <ul
                             class="flex items-center bg-neon-green text-dark-green rounded-lg px-4 py-5"
                         >
@@ -74,11 +74,11 @@
                     </div>
 
                     <!-- Download button -->
-                    <div class="w-full lg:w-1/4 flex lg:justify-end">
+                    <div class="w-max lg:w-1/4 flex justify-end">
                         <a
                             href="/download"
                             target="_blank"
-                            class="text-xl flex justify-center items-center px-10 py-4 bg-neon-green text-dark-green rounded-full border border-neon-green hover:bg-dark-green hover:text-neon-green transition-colors duration-300"
+                            class="text-base lg:text-xl flex justify-center items-center px-10 py-3 lg:py-4 bg-neon-green text-dark-green rounded-full border border-neon-green hover:bg-dark-green hover:text-neon-green transition-colors duration-300"
                         >
                             Download
                         </a>
@@ -88,24 +88,27 @@
         </nav>
 
         <!-- Hero Section -->
-        <section class="pt-20 lg:pt-40 pb-10 lg:pb-20 bg-dark-green">
+        <section class="pt-60 lg:pt-40 pb-10 lg:pb-20 bg-dark-green">
             <div class="container relative">
                 <h1
-                    class="text-[130px] leading-none uppercase lg:pt-20 text-neon-green tracking-[3px] text-center"
+                    class="text-5xl min-[410px]:text-[3.25rem] lg:text-[130px] leading-none uppercase lg:pt-20 text-neon-green tracking-[3px] text-center"
                 >
                     From the<br />
-                    <span class="outlined-text !tracking-[6px]">graveyard</span>
+                    <span
+                        class="outlined-text !tracking-[6px] whitespace-nowrap"
+                        >graveyard</span
+                    >
                     <img
                         src="./assets/images/granite-graveyard-tombstone.svg"
                         alt="Granite Graveyard Condensed Logo"
-                        class="inline-block h-[110px] w-auto -mt-10 -ml-2"
+                        class="inline-block h-[40px] lg:h-[110px] w-auto -mt-3 min-[410px]:-mt-4 lg:-mt-10 lg:-ml-2"
                     />
                     to<br />
                     the
                     <span class="outlined-text !tracking-[5px]">granite.</span>
                 </h1>
 
-                <div class="absolute right-60 top-0">
+                <div class="absolute right-20 lg:right-60 -top-20 lg:top-0">
                     <div class="relative">
                         <span
                             class="text-neon-green text-7xl leading-[0] w-max inline-block"
@@ -130,16 +133,10 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
                 >
                     <div
-                        class="col-span-1 flex flex-col items-center justify-center relative min-h-[381px] p-16"
+                        class="col-span-1 flex flex-col items-center justify-center relative bg-neon-green rounded-b-[88px] xl:rounded-b-[80px] 2xl:rounded-b-[60px] pb-6 lg:pb-10 px-6 lg:px-8 xl:px-12 pt-24 xl:pt-32 2xl:pt-40 rounded-t-[525px] min-h-[360px] max-w-[328px] md:max-w-full mx-auto md:mx-0"
                     >
-                        <img
-                            src="./assets/images/tombstone-background-neon.svg"
-                            alt="Tombstone"
-                            class="absolute top-0 left-0 w-full h-full"
-                        />
-
                         <div
-                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 right-0"
+                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 -right-1 translate-y-[6px]"
                         >
                             <span
                                 class="font-secondary text-[42px] text-dark-green pt-2"
@@ -148,25 +145,19 @@
                         </div>
 
                         <p
-                            class="relative text-dark-green text-[28px] leading-[1.2] pt-20"
+                            class="relative text-dark-green text-[20px] xl:text-[28px] lg:leading-[1.2]"
                         >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Praesent ullamcorper sapien non tortor
-                            aliquam, a ullamcorper lectus porttitor.
+                            aliquam, a ullamcorper
                         </p>
                     </div>
 
                     <div
-                        class="col-span-1 flex flex-col items-center justify-center relative min-h-[381px] p-16"
+                        class="col-span-1 flex flex-col items-center justify-center relative bg-neon-green rounded-b-[88px] xl:rounded-b-[80px] 2xl:rounded-b-[60px] pb-6 lg:pb-10 px-6 lg:px-8 xl:px-12 pt-24 xl:pt-32 2xl:pt-40 rounded-t-[525px] min-h-[360px] max-w-[328px] md:max-w-full mx-auto md:mx-0"
                     >
-                        <img
-                            src="./assets/images/tombstone-background-neon.svg"
-                            alt="Tombstone"
-                            class="absolute top-0 left-0 w-full h-full"
-                        />
-
                         <div
-                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 right-0"
+                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 -right-1 translate-y-[6px]"
                         >
                             <span
                                 class="font-secondary text-[42px] text-dark-green pt-2"
@@ -175,25 +166,19 @@
                         </div>
 
                         <p
-                            class="relative text-dark-green text-[28px] leading-[1.2] pt-20"
+                            class="relative text-dark-green text-[20px] xl:text-[28px] lg:leading-[1.2]"
                         >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Praesent ullamcorper sapien non tortor
-                            aliquam, a ullamcorper lectus porttitor.
+                            aliquam, a ullamcorper
                         </p>
                     </div>
 
                     <div
-                        class="col-span-1 flex flex-col items-center justify-center relative min-h-[381px] p-16"
+                        class="col-span-1 flex flex-col items-center justify-center relative bg-neon-green rounded-b-[88px] xl:rounded-b-[80px] 2xl:rounded-b-[60px] pb-6 lg:pb-10 px-6 lg:px-8 xl:px-12 pt-24 xl:pt-32 2xl:pt-40 rounded-t-[525px] min-h-[360px] max-w-[328px] md:max-w-full mx-auto md:mx-0"
                     >
-                        <img
-                            src="./assets/images/tombstone-background-neon.svg"
-                            alt="Tombstone"
-                            class="absolute top-0 left-0 w-full h-full"
-                        />
-
                         <div
-                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 right-0"
+                            class="w-[75px] h-[75px] rounded-full bg-[#D3DADA] border-4 border-dark-green flex justify-center items-center absolute bottom-0 -right-1 translate-y-[6px]"
                         >
                             <span
                                 class="font-secondary text-[42px] text-dark-green pt-2"
@@ -202,11 +187,11 @@
                         </div>
 
                         <p
-                            class="relative text-dark-green text-[28px] leading-[33px] pt-20"
+                            class="relative text-dark-green text-[20px] xl:text-[28px] lg:leading-[1.2]"
                         >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Praesent ullamcorper sapien non tortor
-                            aliquam, a ullamcorper lectus porttitor.
+                            aliquam, a ullamcorper
                         </p>
                     </div>
                 </div>
@@ -214,184 +199,437 @@
         </section>
 
         <!-- Brand Marquee Section -->
-        <section class="py-10 lg:py-20 bg-dark-green" id="brands">
-            <h2 class="text-[60px] uppercase text-neon-green text-center">
-                Choose from the
-                <span class="outlined-text-60">biggest </span>brands
-            </h2>
+        <section
+            class="py-20 lg:py-20 bg-dark-green overflow-x-hidden"
+            id="brands"
+        >
+            <div class="container">
+                <h2
+                    class="text-[60px] leading-none uppercase text-neon-green text-center"
+                >
+                    Choose from the
+                    <span class="outlined-text-60">biggest </span>brands
+                </h2>
 
-            <div class="marquee overflow-hidden relative mt-10">
-                <div class="marquee-content h-full flex gap-20">
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                <div class="flex mt-16 lg:mt-20 rtl" style="direction: rtl">
+                    <div class="flex">
+                        <div class="flex" data-marquee="reversed">
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="marquee overflow-hidden relative">
-                <div class="marquee-content h-full flex gap-20 -ml-48">
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                <div
+                    class="introduction__bar reversed flex rtl mt-12 lg:mt-10 pb-10"
+                >
+                    <div class="introduction__row flex">
+                        <div class="introdution__row-inner flex" data-marquee>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/burgess-logo.svg"
-                            alt="Logo"
-                        />
-                    </div>
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
 
-                    <div>
-                        <img
-                            src="./assets/images/suppliers-logos/mojo-logo.svg"
-                            alt="Logo"
-                        />
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/burgess-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+
+                            <img
+                                src="./assets/images/suppliers-logos/mojo-logo.svg"
+                                alt=""
+                                class="introduction__logo"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -399,7 +637,7 @@
 
         <!-- Info Section -->
         <section class="py-10 lg:py-20 bg-dark-green relative" id="info">
-            <div class="absolute right-60 top-0">
+            <div class="absolute right-16 lg:right-60 -top-8 lg:top-0">
                 <div class="relative">
                     <span
                         class="text-neon-green text-7xl leading-[0] w-max inline-block"
@@ -416,7 +654,9 @@
             </div>
 
             <div class="container">
-                <p class="text-white text-[28px] leading-[37px]">
+                <p
+                    class="text-white text-[20px] lg:text-[28px] lg:leading-[37px]"
+                >
                     <span class="inline-block pl-[88px]">Lorem</span> ipsum
                     dolor sit amet, consectetur adipiscing elit. Praesent
                     ullamcorper sapien non tortor aliquam, a ullamcorper lectus
@@ -438,7 +678,7 @@
 
                 <div class="accordion mt-10 flex flex-col gap-y-10">
                     <div
-                        class="accordion-item bg-white p-10 border-2 border-neon-green rounded-lg overflow-hidden"
+                        class="accordion-item bg-white p-6 lg:p-10 border-2 border-neon-green rounded-lg overflow-hidden"
                     >
                         <button
                             id="accordion-button-3"
@@ -446,12 +686,12 @@
                             class="w-full flex items-center justify-between"
                         >
                             <span
-                                class="accordion-title text-3xl text-dark-green"
+                                class="accordion-title text-[20px] lg:text-3xl text-dark-green text-left pr-4"
                                 >Why is the moon sometimes out during the
                                 day?</span
                             >
                             <span
-                                class="icon flex justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
+                                class="icon flex flex-shrink-0 justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
                                 aria-hidden="true"
                             >
                                 <svg
@@ -481,7 +721,9 @@
                             </span>
                         </button>
                         <div class="accordion-content">
-                            <p class="text-xl mt-10 pr-20 text-dark-green">
+                            <p
+                                class="text-xl pt-6 lg:pt-10 pr-12 lg:pr-20 text-dark-green"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -492,7 +734,7 @@
                     </div>
 
                     <div
-                        class="accordion-item bg-white p-10 border-2 border-neon-green rounded-lg overflow-hidden"
+                        class="accordion-item bg-white p-6 lg:p-10 border-2 border-neon-green rounded-lg overflow-hidden"
                     >
                         <button
                             id="accordion-button-3"
@@ -500,12 +742,12 @@
                             class="w-full flex items-center justify-between"
                         >
                             <span
-                                class="accordion-title text-3xl text-dark-green"
+                                class="accordion-title text-[20px] lg:text-3xl text-dark-green text-left pr-4"
                                 >Why is the moon sometimes out during the
                                 day?</span
                             >
                             <span
-                                class="icon flex justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
+                                class="icon flex flex-shrink-0 justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
                                 aria-hidden="true"
                             >
                                 <svg
@@ -535,7 +777,9 @@
                             </span>
                         </button>
                         <div class="accordion-content">
-                            <p class="text-xl mt-10 pr-20 text-dark-green">
+                            <p
+                                class="text-xl pt-6 lg:pt-10 pr-12 lg:pr-20 text-dark-green"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -546,7 +790,7 @@
                     </div>
 
                     <div
-                        class="accordion-item bg-white p-10 border-2 border-neon-green rounded-lg overflow-hidden"
+                        class="accordion-item bg-white p-6 lg:p-10 border-2 border-neon-green rounded-lg overflow-hidden"
                     >
                         <button
                             id="accordion-button-3"
@@ -554,12 +798,12 @@
                             class="w-full flex items-center justify-between"
                         >
                             <span
-                                class="accordion-title text-3xl text-dark-green"
+                                class="accordion-title text-[20px] lg:text-3xl text-dark-green text-left pr-4"
                                 >Why is the moon sometimes out during the
                                 day?</span
                             >
                             <span
-                                class="icon flex justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
+                                class="icon flex flex-shrink-0 justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
                                 aria-hidden="true"
                             >
                                 <svg
@@ -589,7 +833,9 @@
                             </span>
                         </button>
                         <div class="accordion-content">
-                            <p class="text-xl mt-10 pr-20 text-dark-green">
+                            <p
+                                class="text-xl pt-6 lg:pt-10 pr-12 lg:pr-20 text-dark-green"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -600,7 +846,7 @@
                     </div>
 
                     <div
-                        class="accordion-item bg-white p-10 border-2 border-neon-green rounded-lg overflow-hidden"
+                        class="accordion-item bg-white p-6 lg:p-10 border-2 border-neon-green rounded-lg overflow-hidden"
                     >
                         <button
                             id="accordion-button-3"
@@ -608,12 +854,12 @@
                             class="w-full flex items-center justify-between"
                         >
                             <span
-                                class="accordion-title text-3xl text-dark-green"
+                                class="accordion-title text-[20px] lg:text-3xl text-dark-green text-left pr-4"
                                 >Why is the moon sometimes out during the
                                 day?</span
                             >
                             <span
-                                class="icon flex justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
+                                class="icon flex flex-shrink-0 justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
                                 aria-hidden="true"
                             >
                                 <svg
@@ -643,7 +889,9 @@
                             </span>
                         </button>
                         <div class="accordion-content">
-                            <p class="text-xl mt-10 pr-20 text-dark-green">
+                            <p
+                                class="text-xl pt-6 lg:pt-10 pr-12 lg:pr-20 text-dark-green"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -654,7 +902,7 @@
                     </div>
 
                     <div
-                        class="accordion-item bg-white p-10 border-2 border-neon-green rounded-lg overflow-hidden"
+                        class="accordion-item bg-white p-6 lg:p-10 border-2 border-neon-green rounded-lg overflow-hidden"
                     >
                         <button
                             id="accordion-button-3"
@@ -662,12 +910,12 @@
                             class="w-full flex items-center justify-between"
                         >
                             <span
-                                class="accordion-title text-3xl text-dark-green"
+                                class="accordion-title text-[20px] lg:text-3xl text-dark-green text-left pr-4"
                                 >Why is the moon sometimes out during the
                                 day?</span
                             >
                             <span
-                                class="icon flex justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
+                                class="icon flex flex-shrink-0 justify-center items-center border-2 border-neon-green rounded-full h-10 w-10 text-3xl leading-[0]"
                                 aria-hidden="true"
                             >
                                 <svg
@@ -697,7 +945,9 @@
                             </span>
                         </button>
                         <div class="accordion-content">
-                            <p class="text-xl mt-10 pr-20 text-dark-green">
+                            <p
+                                class="text-xl pt-6 lg:pt-10 pr-12 lg:pr-20 text-dark-green"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -711,9 +961,14 @@
         </section>
 
         <!-- Slick Slider Section -->
-        <section class="py-10 lg:py-20 bg-dark-green" id="socials">
+        <section
+            class="py-10 lg:py-20 bg-dark-green overflow-x-hidden"
+            id="socials"
+        >
             <div class="container">
-                <h2 class="text-[60px] uppercase text-neon-green text-center">
+                <h2
+                    class="text-[60px] leading-none uppercase text-neon-green text-center"
+                >
                     Our
                     <span class="outlined-text-60">granite </span>
                     out in the wild
@@ -735,7 +990,7 @@
                             </span>
 
                             <span
-                                class="text-3xl leading-[0] -tracking-[1px] text-white"
+                                class="text-3xl leading-[1.1] -tracking-[1px] text-white"
                             >
                                 General enquiries
                             </span>
@@ -763,7 +1018,7 @@
                             </span>
 
                             <span
-                                class="text-3xl leading-[0] -tracking-[1px] text-white"
+                                class="text-3xl leading-[1.1] -tracking-[1px] text-white"
                             >
                                 General enquiries
                             </span>
@@ -791,7 +1046,7 @@
                             </span>
 
                             <span
-                                class="text-3xl leading-[0] -tracking-[1px] text-white"
+                                class="text-3xl leading-[1.1] -tracking-[1px] text-white"
                             >
                                 General enquiries
                             </span>
@@ -819,7 +1074,7 @@
                             </span>
 
                             <span
-                                class="text-3xl leading-[0] -tracking-[1px] text-white"
+                                class="text-3xl leading-[1.1] -tracking-[1px] text-white"
                             >
                                 General enquiries
                             </span>
@@ -847,7 +1102,7 @@
                             </span>
 
                             <span
-                                class="text-3xl leading-[0] -tracking-[1px] text-white"
+                                class="text-3xl leading-[1.1] -tracking-[1px] text-white"
                             >
                                 General enquiries
                             </span>
@@ -867,7 +1122,7 @@
         <section class="py-10 lg:py-20 bg-dark-green">
             <div class="container">
                 <h2
-                    class="text-[130px] leading-[130px] uppercase text-neon-green tracking-[3px]"
+                    class="text-5xl min-[410px]:text-[3.25rem] lg:text-[130px] leading-none lg:leading-[130px] uppercase text-neon-green tracking-[3px]"
                 >
                     BE IN THE
                     <span class="outlined-text"
@@ -877,11 +1132,11 @@
                 </h2>
 
                 <!-- Download button -->
-                <div class="w-full flex lg:justify-end pt-10">
+                <div class="w-full flex justify-end pt-10">
                     <a
                         href="/download"
                         target="_blank"
-                        class="text-xl flex justify-center items-center px-10 py-4 bg-neon-green text-dark-green rounded-full border border-neon-green hover:bg-dark-green hover:text-neon-green transition-colors duration-300"
+                        class="text-base lg:text-xl flex justify-center items-center px-10 py-3 lg:py-4 bg-neon-green text-dark-green rounded-full border border-neon-green hover:bg-dark-green hover:text-neon-green transition-colors duration-300"
                     >
                         Visit the app store
                     </a>
@@ -893,7 +1148,7 @@
         <section class="py-10 bg-dark-green" id="contact">
             <div class="container">
                 <div class="grid grid-cols-6 lg:grid-cols-12 gap-4">
-                    <div class="col-span-3">
+                    <div class="col-span-6 lg:col-span-3">
                         <div class="relative pb-4">
                             <span
                                 class="text-neon-green text-7xl leading-[0] w-max inline-block"
@@ -911,7 +1166,7 @@
                         <a
                             href="tel:+44 (0) 121 123 4567"
                             target="_self"
-                            class="text-white text-xl"
+                            class="text-white text-xl w-full lg:w-auto"
                             >+44 (0) 121 123 4567
                         </a>
 
@@ -923,7 +1178,9 @@
                         </a>
                     </div>
 
-                    <div class="col-span-3 col-start-5">
+                    <div
+                        class="col-span-6 lg:col-span-3 lg:col-start-5 mt-6 lg:mt-0"
+                    >
                         <div class="relative pb-4">
                             <span
                                 class="text-neon-green text-7xl leading-[0] w-max inline-block"
@@ -946,8 +1203,10 @@
                         </address>
                     </div>
 
-                    <div class="col-span-2 col-start-11">
-                        <div class="relative pb-4 text-right">
+                    <div
+                        class="col-span-6 lg:col-span-2 lg:col-start-11 mt-6 lg:mt-0"
+                    >
+                        <div class="relative pb-4 lg:text-right">
                             <span
                                 class="text-neon-green text-7xl leading-[0] w-max inline-block"
                             >
@@ -964,14 +1223,14 @@
                         <a
                             href="/twitter"
                             target="_blank"
-                            class="text-white text-xl block text-right"
+                            class="text-white text-xl block lg:text-right"
                             >Twitter</a
                         >
 
                         <a
                             href="/instagram"
                             target="_blank"
-                            class="text-white text-xl block text-right"
+                            class="text-white text-xl block lg:text-right"
                             >Instagram</a
                         >
                     </div>
@@ -996,6 +1255,8 @@
         <!-- Lenis -->
         <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
         <script src="./src/js/Lenis.js" defer></script>
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <!-- Infinite Marquee -->
         <script src="./src/js/InfiniteMarquee.js" defer></script>
         <!-- FAQs -->

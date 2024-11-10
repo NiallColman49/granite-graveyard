@@ -1,11 +1,12 @@
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
-    '--marquee-elements-displayed'
-);
-const marqueeContent = document.querySelector('div.marquee-content');
+const marquees = document.querySelectorAll('[data-marquee]');
 
-root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+marquees.forEach((marquee) => {
+    const direction = marquee.getAttribute('data-marquee');
 
-for (let i = 0; i < marqueeElementsDisplayed; i++) {
-    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
+    gsap.to(marquee, {
+        duration: marquee.offsetWidth / 200,
+        x: direction == 'reversed' ? '25%' : '-25%',
+        ease: 'linear',
+        repeat: -1,
+    });
+});
