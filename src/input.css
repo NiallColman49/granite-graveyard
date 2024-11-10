@@ -1,3 +1,275 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Work Sans */
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* BN Brick House */
+@font-face {
+    font-family: 'BN Brick House Heavy Alt';
+    src: url('../assets/fonts/BNBrickHouseHeavyAlt.woff2') format('woff2'),
+        url('../assets/fonts/BNBrickHouseHeavyAlt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-secondary;
+}
+
+p,
+span,
+a {
+    @apply font-primary;
+}
+
+/* Marquee */
+:root {
+    --marquee-width: 100vw;
+    --marquee-height: 15vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(
+        var(--marquee-width) / var(--marquee-elements-displayed)
+    );
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: '';
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+}
+
+.marquee:after {
+    right: 0;
+}
+
+.marquee-content {
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(
+            calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+        );
+    }
+}
+
+.marquee-content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+    white-space: nowrap;
+}
+
+.marquee-content img {
+    width: 100%;
+    height: 100%;
+    padding: 0px 80px;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    :root {
+        --marquee-width: 100vw;
+        --marquee-height: 16vh;
+        --marquee-elements-displayed: 3;
+    }
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+}
+
+/* Accordion */
+.accordion {
+    button[aria-expanded='true'] {
+        + .accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }
+    .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+    }
+}
+
+/* Floating CTA */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.floating-cta svg {
+    animation: rotate 7s linear infinite;
+}
+
+.floating-cta:after {
+    content: '✋';
+    font-size: 1.7708333333vw;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-20deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+}
+
+/* Safelist */
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+/* Outlined text */
+.outlined-text {
+    @apply text-[130px] leading-none uppercase lg:pt-20 text-dark-green font-secondary tracking-[3px];
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e0e995;
+}
+
+.outlined-text-60 {
+    @apply text-[60px] leading-none uppercase lg:pt-20 text-dark-green font-secondary tracking-[3px];
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e0e995;
+}
+
+/* Slick Slider */
+.slick-list {
+    @apply w-[130%];
+}
